@@ -1,0 +1,109 @@
+name: "🚀 Register Project"
+description: "Register your project for the AI-Accelerated Migration Challenge"
+title: "Project: "
+labels: ["project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎉 Thanks for participating!
+        Fill in the fields to register your project in the
+        **AI-Accelerated Migration Challenge**.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: "📛 Project Name"
+      placeholder: "Ex: MediSynth Medallion Migrator"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Project Description"
+      description: "Explain what you migrate and how you apply Bronze → Silver → Gold."
+      placeholder: "We migrate legacy data into a Medallion Architecture using BMAD + LLMs..."
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: "📦 Repository URL (Public)"
+      placeholder: "https://github.com/user/my-project"
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt-journal
+    attributes:
+      label: "📓 Prompt Journal (Required)"
+      description: "Include a log with **all** prompts used for evaluation"
+      placeholder: "Ex: https://.../prompt-journal.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bmad-llm
+    attributes:
+      label: "🤖 BMAD + LLMs (AI-First Approach)"
+      description: "Describe how you use BMAD and LLMs to automate migration."
+      placeholder: "We use BMAD for... and LLMs for..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: medallion
+    attributes:
+      label: "🥉 Bronze/Silver/Gold (Medallion Standard)"
+      description: "Explain how your final output respects Bronze → Silver → Gold."
+      placeholder: "Bronze: ...; Silver: ...; Gold: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: dq-lineage
+    attributes:
+      label: "🔧 DQ tests and AI-generated Lineage"
+      description: "Link or describe your DQ tests and generated *AI-generated Lineage*."
+      placeholder: "Ex: ./tests/dq/ ... and lineage in ./artifacts/lineage/ ..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: sabotage-hurdles
+    attributes:
+      label: "🧨 Sabotage hurdles your solution handles"
+      description: "Select the hurdles covered by your solution (optional)."
+      options:
+        - label: "Cryptic Header Obfuscation"
+        - label: "Date Format Chaos"
+        - label: "Nested & Inconsistent JSON"
+        - label: "Relationship Deletion"
+        - label: "Enum Obfuscation"
+
+  - type: checkboxes
+    id: participants-timeline
+    attributes:
+      label: "👥 Team and timeline"
+      options:
+        - label: "The project is developed by a team of 1 to 4 people"
+          required: true
+        - label: "Submission is planned for May 20, 2026 (1 month after April 20, 2026)"
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "✅ Confirmation"
+      options:
+        - label: "I followed an AI-First approach (BMAD + LLMs)"
+          required: true
+        - label: "My output follows Medallion Architecture (Bronze → Silver → Gold)"
+          required: true
+        - label: "I kept a Prompt Journal with prompts used"
+          required: true
+        - label: "The repository is public and contains migration reproducibility references"
+          required: true
+
