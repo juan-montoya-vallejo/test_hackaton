@@ -1,0 +1,55 @@
+name: "📝 Register Team (Start)"
+description: "Register your team at the beginning of the hackathon"
+title: "Team Registration: "
+labels: ["registration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Team Registration
+        Complete this form at the start of the hackathon.
+
+  - type: input
+    id: leader-email
+    attributes:
+      label: "📧 Project Leader Email"
+      placeholder: "team.leader@example.com"
+    validations:
+      required: true
+
+  - type: textarea
+    id: team-members
+    attributes:
+      label: "👥 Team Member Names"
+      description: "List all team members, including the project leader."
+      placeholder: "- Leader Name\n- Member 2 Name\n- Member 3 Name"
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: "📦 Repository URL (Public)"
+      placeholder: "https://github.com/user/my-project"
+      description: "Use a fork of this repo or a new repo created from scratch."
+    validations:
+      required: true
+
+  - type: textarea
+    id: initial-plan
+    attributes:
+      label: "🧭 Initial Plan"
+      description: "Briefly describe your planned approach and scope."
+      placeholder: "High-level plan, tools, and expected deliverables..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: registration-rules
+    attributes:
+      label: "✅ Registration Rules"
+      options:
+        - label: "Our team has 1 to 4 people"
+          required: true
+        - label: "We understand the submission deadline is May 20, 2026"
+          required: true

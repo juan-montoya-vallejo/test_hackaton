@@ -1,0 +1,81 @@
+name: "🚀 Final Submission (End)"
+description: "Submit final results at the end of the hackathon"
+title: "Final Submission: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Final Submission
+        Complete this form at the end of the hackathon.
+
+  - type: input
+    id: registration-issue
+    attributes:
+      label: "🔗 Registration Issue URL"
+      placeholder: "https://github.com/.../issues/123"
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: "📦 Repository URL (Public)"
+      placeholder: "https://github.com/user/my-project"
+      description: "Link the final repository used during the challenge."
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-summary
+    attributes:
+      label: "📝 Final Project Summary"
+      description: "Explain what you migrated and your Bronze → Silver → Gold outcome."
+      placeholder: "Final architecture, key outcomes, and migration scope..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt-journal
+    attributes:
+      label: "📓 Prompt Journal Experience"
+      description: "Share your experience using Prompt Journal during the challenge."
+      placeholder: "What worked, what changed, and key learnings..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: bmad-llm
+    attributes:
+      label: "🤖 BMAD + LLM Experience"
+      description: "Share what worked well and what was hard using BMAD and LLMs."
+      placeholder: "Main wins, pain points, and lessons learned..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: cloud-sandbox
+    attributes:
+      label: "☁️ Slalom Sandbox Usage (Pluralsight + Innovation Labs)"
+      description: "Describe your experience using the Slalom sandbox for cloud work."
+      placeholder: "Services used, setup notes, and practical learnings..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: medallion
+    attributes:
+      label: "🥉 Bronze/Silver/Gold (Medallion Standard)"
+      description: "Explain how your final output respects Bronze → Silver → Gold."
+      placeholder: "Bronze: ...; Silver: ...; Gold: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: dq-lineage
+    attributes:
+      label: "🔧 DQ and AI-generated Lineage Experience"
+      description: "Describe the value and lessons from using DQ tests and lineage."
+      placeholder: "How DQ and lineage improved quality, visibility, and decisions..."
+    validations:
+      required: true
