@@ -1,6 +1,6 @@
 name: "🚀 Register Project"
 description: "Register your project for the AI-Accelerated Migration Challenge"
-title: "Project: "
+title: "Team: "
 labels: ["project"]
 body:
   - type: markdown
@@ -11,10 +11,10 @@ body:
         **AI-Accelerated Migration Challenge**.
 
   - type: input
-    id: project-name
+    id: team-name
     attributes:
-      label: "📛 Project Name"
-      placeholder: "Ex: MediSynth Medallion Migrator"
+      label: "👥 Team Name"
+      placeholder: "Ex: Data Mavericks"
     validations:
       required: true
 
@@ -32,14 +32,15 @@ body:
     attributes:
       label: "📦 Repository URL (Public)"
       placeholder: "https://github.com/user/my-project"
+      description: "Link your fork of this repo or a new repo created from scratch."
     validations:
       required: true
 
   - type: textarea
     id: prompt-journal
     attributes:
-      label: "📓 Prompt Journal (Required)"
-      description: "Include a log with **all** prompts used for evaluation"
+      label: "📓 Prompt Journal Experience"
+      description: "Share your experience using Prompt Journal during the challenge."
       placeholder: "Ex: https://.../prompt-journal.md"
     validations:
       required: true
@@ -47,9 +48,18 @@ body:
   - type: textarea
     id: bmad-llm
     attributes:
-      label: "🤖 BMAD + LLMs (AI-First Approach)"
-      description: "Describe how you use BMAD and LLMs to automate migration."
-      placeholder: "We use BMAD for... and LLMs for..."
+      label: "🤖 BMAD + LLM Experience"
+      description: "Share what worked well and what was hard using BMAD and LLMs."
+      placeholder: "What helped most, pain points, and lessons learned..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: cloud-sandbox
+    attributes:
+      label: "☁️ Slalom Sandbox Usage (Pluralsight + Innovation Labs)"
+      description: "Describe your experience using the Slalom sandbox for cloud work."
+      placeholder: "What services you used, setup notes, and main learnings..."
     validations:
       required: true
 
@@ -91,19 +101,5 @@ body:
         - label: "The project is developed by a team of 1 to 4 people"
           required: true
         - label: "Submission is planned for May 20, 2026 (1 month after April 20, 2026)"
-          required: true
-
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: "✅ Confirmation"
-      options:
-        - label: "I followed an AI-First approach (BMAD + LLMs)"
-          required: true
-        - label: "My output follows Medallion Architecture (Bronze → Silver → Gold)"
-          required: true
-        - label: "I kept a Prompt Journal with prompts used"
-          required: true
-        - label: "The repository is public and contains migration reproducibility references"
           required: true
 

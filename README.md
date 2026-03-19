@@ -36,6 +36,8 @@ Participants must migrate archaic data into a
 2. **Medallion Standard:** final output must respect
    **Bronze**, **Silver**, and **Gold** layers.
 3. **The Prompt Journal:** keep a log of **all** prompts used for evaluation.
+4. **Cloud Recommendation:** strongly prefer the Slalom sandbox environment available
+   in Pluralsight and Innovation Labs for cloud usage.
 
 ---
 
@@ -48,6 +50,12 @@ The **team** can include **1 to 4 people**.
 ## 📩 Register Your Team
 
 Create an issue using the form to register your participation:
+
+Each team must build and maintain its own repository for this challenge.
+Feel free to fork this project and start from there, then link your fork in the form.
+You can also create your own repository from scratch and link it in the same field.
+When you submit the issue form, include the public repository URL in the
+`Repository URL (Public)` field.
 
 [Register your team here](
 https://github.com/juan-montoya-vallejo/test_hackaton/issues/new?template=project.yml
@@ -92,6 +100,9 @@ explaining your approach in the *Prompt Journal*.
 
 You can use any cloud or infrastructure where you can run your pipeline and validate
 results. There is no required cloud provider.
+
+We strongly recommend using the Slalom sandbox enabled in Pluralsight and
+Innovation Labs when possible.
 
 </details>
 
