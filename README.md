@@ -14,6 +14,7 @@
 - [🎯 Mission](#-mission)
 - [👥 Team](#-team)
 - [📩 Register Your Team](#-register-your-team)
+- [✅ Final Submission](#-final-submission)
 - [📅 Dates](#-dates)
 - [🧭 Rules of Engagement](#-rules-of-engagement)
 - [📊 Evaluation Criteria](#-evaluation-criteria)
@@ -58,7 +59,17 @@ When you submit the issue form, include the public repository URL in the
 `Repository URL (Public)` field.
 
 [Register your team here](
-https://github.com/juan-montoya-vallejo/test_hackaton/issues/new?template=project.yml
+https://github.com/juan-montoya-vallejo/test_hackaton/issues/new?template=register-team.yml
+)
+
+---
+
+## ✅ Final Submission
+
+At the end of the hackathon, submit your final results using this form:
+
+[Submit final results here](
+https://github.com/juan-montoya-vallejo/test_hackaton/issues/new?template=final-submission.yml
 )
 
 ---
